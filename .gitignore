@@ -1,10 +1,6 @@
-*.xcuserstate
-
-*.DS_Store
-
-\.DS_Store
-
-*.plist
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
 build/
@@ -70,3 +66,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+
+*.xcuserstate
+**.DS_Store
+
+\.DS_Store
