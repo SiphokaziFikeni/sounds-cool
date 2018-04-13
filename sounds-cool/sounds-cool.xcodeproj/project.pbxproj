@@ -14,6 +14,9 @@
 		ED1A213B207CF141006EC36E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1A2139207CF141006EC36E /* LaunchScreen.storyboard */; };
 		EDD25BE4207DFAD200EA1E42 /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD25BE3207DFAD200EA1E42 /* SongDetailsViewController.swift */; };
 		EDD25BE8207DFE9200EA1E42 /* CustomSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD25BE7207DFE9200EA1E42 /* CustomSongTableViewCell.swift */; };
+		EDFAFBEF207F677F00AD1515 /* SongsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFBEE207F677F00AD1515 /* SongsListViewModel.swift */; };
+		EDFAFBF1207F679800AD1515 /* SongDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFBF0207F679800AD1515 /* SongDetailsViewModel.swift */; };
+		EDFAFBF3207F67AF00AD1515 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFBF2207F67AF00AD1515 /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		ED1A213C207CF141006EC36E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDD25BE3207DFAD200EA1E42 /* SongDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsViewController.swift; sourceTree = "<group>"; };
 		EDD25BE7207DFE9200EA1E42 /* CustomSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSongTableViewCell.swift; sourceTree = "<group>"; };
+		EDFAFBEE207F677F00AD1515 /* SongsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsListViewModel.swift; path = "sounds-cool/View/SongsListViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		EDFAFBF0207F679800AD1515 /* SongDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongDetailsViewModel.swift; path = "sounds-cool/View/SongDetailsViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		EDFAFBF2207F67AF00AD1515 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Song.swift; path = "sounds-cool/View/Song.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		EDD25BE1207DFA5200EA1E42 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EDFAFBEE207F677F00AD1515 /* SongsListViewModel.swift */,
+				EDFAFBF0207F679800AD1515 /* SongDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -88,6 +96,7 @@
 		EDD25BE2207DFA5C00EA1E42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EDFAFBF2207F67AF00AD1515 /* Song.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,8 +193,11 @@
 			files = (
 				ED1A2133207CF141006EC36E /* ViewController.swift in Sources */,
 				EDD25BE8207DFE9200EA1E42 /* CustomSongTableViewCell.swift in Sources */,
+				EDFAFBF1207F679800AD1515 /* SongDetailsViewModel.swift in Sources */,
 				EDD25BE4207DFAD200EA1E42 /* SongDetailsViewController.swift in Sources */,
+				EDFAFBF3207F67AF00AD1515 /* Song.swift in Sources */,
 				ED1A2131207CF141006EC36E /* AppDelegate.swift in Sources */,
+				EDFAFBEF207F677F00AD1515 /* SongsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,10 +341,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JLSAHBA535;
+				DEVELOPMENT_TEAM = GLK7J5PP82;
 				INFOPLIST_FILE = "sounds-cool/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "za.co.dvt.sounds-cool";
+				PRODUCT_BUNDLE_IDENTIFIER = "za.co.dvt.sounds-dope";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,10 +356,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JLSAHBA535;
+				DEVELOPMENT_TEAM = GLK7J5PP82;
 				INFOPLIST_FILE = "sounds-cool/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "za.co.dvt.sounds-cool";
+				PRODUCT_BUNDLE_IDENTIFIER = "za.co.dvt.sounds-dope";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
