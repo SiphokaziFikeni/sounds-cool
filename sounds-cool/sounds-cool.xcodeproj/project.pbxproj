@@ -12,12 +12,24 @@
 		ED1A2136207CF141006EC36E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1A2134207CF141006EC36E /* Main.storyboard */; };
 		ED1A2138207CF141006EC36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1A2137207CF141006EC36E /* Assets.xcassets */; };
 		ED1A213B207CF141006EC36E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1A2139207CF141006EC36E /* LaunchScreen.storyboard */; };
+		ED39B8EE208495AB002D0D0C /* SongDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39B8ED208495AB002D0D0C /* SongDetails.swift */; };
+		ED8604F52085EC920095AFDB /* sounds_coolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8604F42085EC920095AFDB /* sounds_coolTests.swift */; };
 		EDD25BE4207DFAD200EA1E42 /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD25BE3207DFAD200EA1E42 /* SongDetailsViewController.swift */; };
 		EDD25BE8207DFE9200EA1E42 /* CustomSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD25BE7207DFE9200EA1E42 /* CustomSongTableViewCell.swift */; };
 		EDFAFBEF207F677F00AD1515 /* SongsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFBEE207F677F00AD1515 /* SongsListViewModel.swift */; };
 		EDFAFBF1207F679800AD1515 /* SongDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFBF0207F679800AD1515 /* SongDetailsViewModel.swift */; };
 		EDFAFBF3207F67AF00AD1515 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFBF2207F67AF00AD1515 /* Song.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED8604F72085EC930095AFDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED1A2125207CF141006EC36E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED1A212C207CF141006EC36E;
+			remoteInfo = "sounds-cool";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		ED1A212D207CF141006EC36E /* sounds-cool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sounds-cool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +39,10 @@
 		ED1A2137207CF141006EC36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED1A213A207CF141006EC36E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED1A213C207CF141006EC36E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED39B8ED208495AB002D0D0C /* SongDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongDetails.swift; path = "sounds-cool/View/SongDetails.swift"; sourceTree = SOURCE_ROOT; };
+		ED8604F22085EC920095AFDB /* sounds-coolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sounds-coolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8604F42085EC920095AFDB /* sounds_coolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sounds_coolTests.swift; sourceTree = "<group>"; };
+		ED8604F62085EC930095AFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDD25BE3207DFAD200EA1E42 /* SongDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsViewController.swift; sourceTree = "<group>"; };
 		EDD25BE7207DFE9200EA1E42 /* CustomSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSongTableViewCell.swift; sourceTree = "<group>"; };
 		EDFAFBEE207F677F00AD1515 /* SongsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsListViewModel.swift; path = "sounds-cool/View/SongsListViewModel.swift"; sourceTree = SOURCE_ROOT; };
@@ -42,6 +58,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED8604EF2085EC920095AFDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				ED1A212F207CF141006EC36E /* sounds-cool */,
+				ED8604F32085EC920095AFDB /* sounds-coolTests */,
 				ED1A212E207CF141006EC36E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				ED1A212D207CF141006EC36E /* sounds-cool.app */,
+				ED8604F22085EC920095AFDB /* sounds-coolTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +97,15 @@
 				ED1A213C207CF141006EC36E /* Info.plist */,
 			);
 			path = "sounds-cool";
+			sourceTree = "<group>";
+		};
+		ED8604F32085EC920095AFDB /* sounds-coolTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED8604F42085EC920095AFDB /* sounds_coolTests.swift */,
+				ED8604F62085EC930095AFDB /* Info.plist */,
+			);
+			path = "sounds-coolTests";
 			sourceTree = "<group>";
 		};
 		EDD25BE0207DFA4400EA1E42 /* View */ = {
@@ -97,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				EDFAFBF2207F67AF00AD1515 /* Song.swift */,
+				ED39B8ED208495AB002D0D0C /* SongDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,19 +174,42 @@
 			productReference = ED1A212D207CF141006EC36E /* sounds-cool.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ED8604F12085EC920095AFDB /* sounds-coolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8604FB2085EC930095AFDB /* Build configuration list for PBXNativeTarget "sounds-coolTests" */;
+			buildPhases = (
+				ED8604EE2085EC920095AFDB /* Sources */,
+				ED8604EF2085EC920095AFDB /* Frameworks */,
+				ED8604F02085EC920095AFDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED8604F82085EC930095AFDB /* PBXTargetDependency */,
+			);
+			name = "sounds-coolTests";
+			productName = "sounds-coolTests";
+			productReference = ED8604F22085EC920095AFDB /* sounds-coolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		ED1A2125207CF141006EC36E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = DVT;
 				TargetAttributes = {
 					ED1A212C207CF141006EC36E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					ED8604F12085EC920095AFDB = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED1A212C207CF141006EC36E;
 					};
 				};
 			};
@@ -169,6 +227,7 @@
 			projectRoot = "";
 			targets = (
 				ED1A212C207CF141006EC36E /* sounds-cool */,
+				ED8604F12085EC920095AFDB /* sounds-coolTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +243,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED8604F02085EC920095AFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -192,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1A2133207CF141006EC36E /* ViewController.swift in Sources */,
+				ED39B8EE208495AB002D0D0C /* SongDetails.swift in Sources */,
 				EDD25BE8207DFE9200EA1E42 /* CustomSongTableViewCell.swift in Sources */,
 				EDFAFBF1207F679800AD1515 /* SongDetailsViewModel.swift in Sources */,
 				EDD25BE4207DFAD200EA1E42 /* SongDetailsViewController.swift in Sources */,
@@ -201,7 +268,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED8604EE2085EC920095AFDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8604F52085EC920095AFDB /* sounds_coolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED8604F82085EC930095AFDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED1A212C207CF141006EC36E /* sounds-cool */;
+			targetProxy = ED8604F72085EC930095AFDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ED1A2134207CF141006EC36E /* Main.storyboard */ = {
@@ -366,6 +449,42 @@
 			};
 			name = Release;
 		};
+		ED8604F92085EC930095AFDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLK7J5PP82;
+				INFOPLIST_FILE = "sounds-coolTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "za.co.dvt.sounds-coolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sounds-cool.app/sounds-cool";
+			};
+			name = Debug;
+		};
+		ED8604FA2085EC930095AFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLK7J5PP82;
+				INFOPLIST_FILE = "sounds-coolTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "za.co.dvt.sounds-coolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sounds-cool.app/sounds-cool";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -383,6 +502,15 @@
 			buildConfigurations = (
 				ED1A2140207CF141006EC36E /* Debug */,
 				ED1A2141207CF141006EC36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED8604FB2085EC930095AFDB /* Build configuration list for PBXNativeTarget "sounds-coolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8604F92085EC930095AFDB /* Debug */,
+				ED8604FA2085EC930095AFDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
