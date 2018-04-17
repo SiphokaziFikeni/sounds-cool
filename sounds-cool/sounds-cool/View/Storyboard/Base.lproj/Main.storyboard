@@ -32,7 +32,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album_art_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qXr-VM-kqr">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qXr-VM-kqr">
                                                     <rect key="frame" x="0.0" y="0.0" width="103" height="103"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="103" id="EUX-Ff-VTN"/>
