@@ -1,6 +1,6 @@
 import UIKit
 
-struct SongDetails {
+class SongDetails {
     
     var id: String
     var title: String
