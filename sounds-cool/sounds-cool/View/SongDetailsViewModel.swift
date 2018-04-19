@@ -3,7 +3,7 @@ import UIKit
 
 class SongDetailsViewModel {
     
-    private var song: SongDetails
+    private var song: Song
     
     var id: String {
         return song.id
@@ -41,7 +41,7 @@ class SongDetailsViewModel {
         return song.albumImage
     }
     
-    init(song: SongDetails) {
+    init(song: Song) {
         self.song = song
     }
 }
