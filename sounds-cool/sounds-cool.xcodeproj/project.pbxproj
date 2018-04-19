@@ -12,7 +12,7 @@
 		ED1A2136207CF141006EC36E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1A2134207CF141006EC36E /* Main.storyboard */; };
 		ED1A2138207CF141006EC36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1A2137207CF141006EC36E /* Assets.xcassets */; };
 		ED1A213B207CF141006EC36E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1A2139207CF141006EC36E /* LaunchScreen.storyboard */; };
-		ED39B8EE208495AB002D0D0C /* SongDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39B8ED208495AB002D0D0C /* SongDetails.swift */; };
+		ED60269F20875C9D00FA07FA /* DetailsLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60269E20875C9D00FA07FA /* DetailsLabelExtension.swift */; };
 		ED8604F52085EC920095AFDB /* sounds_coolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8604F42085EC920095AFDB /* sounds_coolTests.swift */; };
 		EDD25BE4207DFAD200EA1E42 /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD25BE3207DFAD200EA1E42 /* SongDetailsViewController.swift */; };
 		EDD25BE8207DFE9200EA1E42 /* CustomSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD25BE7207DFE9200EA1E42 /* CustomSongTableViewCell.swift */; };
@@ -39,7 +39,7 @@
 		ED1A2137207CF141006EC36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED1A213A207CF141006EC36E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED1A213C207CF141006EC36E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED39B8ED208495AB002D0D0C /* SongDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongDetails.swift; path = "sounds-cool/View/SongDetails.swift"; sourceTree = SOURCE_ROOT; };
+		ED60269E20875C9D00FA07FA /* DetailsLabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsLabelExtension.swift; sourceTree = "<group>"; };
 		ED8604F22085EC920095AFDB /* sounds-coolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sounds-coolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8604F42085EC920095AFDB /* sounds_coolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sounds_coolTests.swift; sourceTree = "<group>"; };
 		ED8604F62085EC930095AFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +89,7 @@
 		ED1A212F207CF141006EC36E /* sounds-cool */ = {
 			isa = PBXGroup;
 			children = (
+				ED60269D20875C7000FA07FA /* Extension */,
 				EDD25BE2207DFA5C00EA1E42 /* Model */,
 				EDD25BE1207DFA5200EA1E42 /* ViewModel */,
 				EDD25BE0207DFA4400EA1E42 /* View */,
@@ -97,6 +98,14 @@
 				ED1A213C207CF141006EC36E /* Info.plist */,
 			);
 			path = "sounds-cool";
+			sourceTree = "<group>";
+		};
+		ED60269D20875C7000FA07FA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED60269E20875C9D00FA07FA /* DetailsLabelExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		ED8604F32085EC920095AFDB /* sounds-coolTests */ = {
@@ -131,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				EDFAFBF2207F67AF00AD1515 /* Song.swift */,
-				ED39B8ED208495AB002D0D0C /* SongDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,7 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1A2133207CF141006EC36E /* ViewController.swift in Sources */,
-				ED39B8EE208495AB002D0D0C /* SongDetails.swift in Sources */,
+				ED60269F20875C9D00FA07FA /* DetailsLabelExtension.swift in Sources */,
 				EDD25BE8207DFE9200EA1E42 /* CustomSongTableViewCell.swift in Sources */,
 				EDFAFBF1207F679800AD1515 /* SongDetailsViewModel.swift in Sources */,
 				EDD25BE4207DFAD200EA1E42 /* SongDetailsViewController.swift in Sources */,
