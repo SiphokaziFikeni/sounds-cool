@@ -121,6 +121,7 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="imageView:B5g-SX-dHy:image" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-SX-dHy">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="136.5"/>
+                                                <color key="backgroundColor" white="0.876953125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="B5g-SX-dHy" secondAttribute="height" multiplier="376:137" id="d1V-b6-XHl"/>
                                                 </constraints>
@@ -319,6 +320,23 @@ Hope you're…</string>
                         <viewLayoutGuide key="safeArea" id="lnQ-aK-oew"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="K3o-71-G0f"/>
+                    <connections>
+                        <outlet property="albumImageView" destination="B5g-SX-dHy" id="ogO-fi-LLK"/>
+                        <outlet property="albumLabel" destination="Ued-Pi-kYu" id="jLR-5I-7Wp"/>
+                        <outlet property="albumTextView" destination="EQp-xQ-aNB" id="SZc-xU-aRm"/>
+                        <outlet property="artistLabel" destination="hpz-40-tDO" id="c0w-g9-dHE"/>
+                        <outlet property="artistTextView" destination="Ex5-Be-qKR" id="q6R-Ag-Fsu"/>
+                        <outlet property="lyricsLabel" destination="KNS-68-Te4" id="kCW-i3-y5C"/>
+                        <outlet property="lyricsTextView" destination="CE1-HS-Css" id="V3e-By-ocu"/>
+                        <outlet property="producerLabel" destination="gze-GV-sbn" id="Jyw-KG-tMe"/>
+                        <outlet property="producerTextView" destination="Ogy-qF-1fT" id="5La-Up-UAW"/>
+                        <outlet property="recordCompanyTextView" destination="ApL-t7-lZI" id="o4U-ea-hFp"/>
+                        <outlet property="recordLabel" destination="pQB-8E-kT8" id="hcB-pJ-1EI"/>
+                        <outlet property="titleLabel" destination="Ty6-70-fx3" id="d0u-Jb-TEQ"/>
+                        <outlet property="titleTextView" destination="TO7-Uw-sfR" id="ibo-md-Mqp"/>
+                        <outlet property="yearLabel" destination="W9v-Ma-uJu" id="t5w-HT-bQD"/>
+                        <outlet property="yearTextView" destination="rUu-AN-Rbe" id="y4S-9S-yG0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jco-aQ-8Kv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

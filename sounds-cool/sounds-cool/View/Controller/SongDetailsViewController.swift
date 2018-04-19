@@ -27,6 +27,7 @@ class SongDetailsViewController : UIViewController {
         
         self.navigationItem.title = "Song Details"
         showSongDetails(song: song)
+        setLayoutLabelColors()
     }
     
     func showSongDetails(song: SongDetailsViewModel?) {
