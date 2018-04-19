@@ -10,31 +10,35 @@ class sounds_coolTests: XCTestCase {
     
     //MARK: Song struct tests
     func testSongInitializationSucceeds() {
-        let noSongAlbumImage = Song.init(id: "01", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "1978", album: "Greatest Hits", albumImage: nil)
+        
+        let noSongAlbumImage = Song.init(id: "01", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "1978", album: "Greatest Hits", recordLabel: "Sophia Town Records", producer: "Caiphus", lyrics: "Jikijela ngamantye", albumImage: nil)
         XCTAssertNotNil(noSongAlbumImage)
         
-        let noSongAlbumTitleAndImage = Song.init(id: "01", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "1978", album: nil, albumImage: nil)
+        let noSongAlbumTitleAndImage = Song.init(id: "01", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "1978", album: nil, recordLabel: "Sophia Town Records", producer: "Caiphus", lyrics: "Jikijela ngamantye", albumImage: nil)
         XCTAssertNotNil(noSongAlbumTitleAndImage)
         
-        let noSongAlbumTitle = Song.init(id: "01", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "1978", album: nil, albumImage: UIImage(named: "jikijela"))
+        let noSongAlbumTitle = Song.init(id: "01", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "1978", album: nil, recordLabel: "Sophia Town Records", producer: "Caiphus", lyrics: "Jikijela ngamantye", albumImage: UIImage(named: "jikijela"))
         XCTAssertNotNil(noSongAlbumTitle)
+        
+        let noSongLyrics = Song.init(id: "01", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "1978", album: "Greatest Hits", recordLabel: "Sophia Town Records", producer: "Caiphus", lyrics: nil, albumImage: UIImage(named: "jikijela"))
+        XCTAssertNotNil(noSongLyrics)
     }
     
     func testSongInitializationFails() {
         
-        let songWithNoId = Song.init(id: "", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "1978", album: "Greatest Hits", albumImage: UIImage(named: "jikijela"))
+        let songWithNoId = Song.init(id: "", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "1978", album: "Greatest Hits", recordLabel: "Sophia Town Records", producer: "Caiphus", lyrics: "Jikijela ngamantye", albumImage: UIImage(named: "jikijela"))
         XCTAssertNil(songWithNoId)
         
-        let songWithNoTitle = Song.init(id: "01", title: "", artist: "Letta Mbulu", releaseYear: "1978", album: "Greatest Hits", albumImage: UIImage(named: "jikijela"))
+        let songWithNoTitle = Song.init(id: "01", title: "", artist: "Letta Mbulu", releaseYear: "1978", album: "Greatest Hits", recordLabel: "Sophia Town Records", producer: "Caiphus", lyrics: "Jikijela ngamantye", albumImage: UIImage(named: "jikijela"))
         XCTAssertNil(songWithNoTitle)
         
-        let songWithNoArtist = Song.init(id: "01", title: "Jikijela", artist: "", releaseYear: "1978", album: "Greatest Hits", albumImage: UIImage(named: "jikijela"))
+        let songWithNoArtist = Song.init(id: "01", title: "Jikijela", artist: "", releaseYear: "1978", album: "Greatest Hits", recordLabel: "Sophia Town Records", producer: "Caiphus", lyrics: "Jikijela ngamantye", albumImage: UIImage(named: "jikijela"))
         XCTAssertNil(songWithNoArtist)
         
-        let songWithNoReleaseYear = Song.init(id: "01", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "", album: "Greatest Hits", albumImage: UIImage(named: "jikijela"))
+        let songWithNoReleaseYear = Song.init(id: "01", title: "Jikijela", artist: "Letta Mbulu", releaseYear: "", album: "Greatest Hits", recordLabel: "Sophia Town Records", producer: "Caiphus", lyrics: "Jikijela ngamantye", albumImage: UIImage(named: "jikijela"))
         XCTAssertNil(songWithNoReleaseYear)
         
-        let songWithNoRequiredProperties = Song.init(id: "", title: "", artist: "", releaseYear: "", album: "", albumImage: UIImage(named: "jikijela"))
+        let songWithNoRequiredProperties = Song.init(id: "", title: "", artist: "", releaseYear: "", album: "Greatest Hits", recordLabel: "", producer: "", lyrics: "Jikijela ngamantye", albumImage: UIImage(named: "jikijela"))
         XCTAssertNil(songWithNoRequiredProperties)
     }
     
