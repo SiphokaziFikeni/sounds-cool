@@ -34,6 +34,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        guard let songDetailsViewController = segue.destination as? SongDetailsViewController else {
+            fatalError("Unexpected destination: \(segue.destination)")
+        }
+        
+        guard let selectedSongCell = sender as? CustomSongTableCiewCell else {
+            fatalError("Unexpected destination: \(segue.destination)")
+        }
+        
+        guard let indexPath = songsTableView.indexPath(for: selectedSongCell) else {
+            fatalError("The selected cell is not being diplayed by the table")
+        }
+        
+        let selectedSong = songDetailsViewModel[indexPath.row]
+        
+        songDetailsViewController.song = selectedSong
+    }
 
 }
 
