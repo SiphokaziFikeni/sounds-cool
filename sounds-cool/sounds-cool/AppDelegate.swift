@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  sounds-cool
-//
-//  Created by DVT on 2018/04/10.
-//  Copyright © 2018 DVT. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -15,7 +7,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    
+        UINavigationBar.appearance().barTintColor = UIColor.purple
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().barStyle = .blackTranslucent
         return true
     }
 
