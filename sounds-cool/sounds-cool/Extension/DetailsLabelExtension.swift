@@ -4,7 +4,7 @@ import UIKit
 extension UILabel {
     
     static func setLabelColor() -> UIColor{
-        let textColor = UIColor.blue
+        let textColor = UIColor.purple
         return textColor
     }
 }
