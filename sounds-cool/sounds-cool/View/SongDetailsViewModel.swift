@@ -3,7 +3,7 @@ import UIKit
 
 class SongDetailsViewModel {
     
-    var song: Song
+    private var song: Song
     let songsListRepo = SongsRepositoryImpl()
     
     init(songId: String) {
