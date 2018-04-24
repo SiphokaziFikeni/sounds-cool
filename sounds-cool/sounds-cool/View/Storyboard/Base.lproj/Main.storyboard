@@ -75,7 +75,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="songItemAlbumLabel" destination="Gvb-7g-O6A" id="d19-Lx-xxA"/>
+                                            <outlet property="songItemAlbumAndYearLabel" destination="Gvb-7g-O6A" id="J5v-6f-Hag"/>
                                             <outlet property="songItemArtistLabel" destination="mou-Ix-BLK" id="FZR-IF-kD8"/>
                                             <outlet property="songItemImageView" destination="XH6-Am-rmo" id="LOk-Bc-4Tu"/>
                                             <outlet property="songItemTitleLabel" destination="PtW-Cp-lqR" id="ay5-bF-WMv"/>

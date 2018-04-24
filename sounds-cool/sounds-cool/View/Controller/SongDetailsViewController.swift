@@ -3,7 +3,10 @@ import UIKit
 
 class SongDetailsViewController : UIViewController {
    
-    var song: SongDetailsViewModel?
+    var songId: String = ""
+    lazy var songDetailsViewModel: SongDetailsViewModel = {
+       SongDetailsViewModel(songId: songId)
+    }()
     
     @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var artistTextView: UITextView!
@@ -26,20 +29,20 @@ class SongDetailsViewController : UIViewController {
         super.viewDidLoad()
         
         self.navigationItem.title = "Song Details"
-        showSongDetails(song: song)
         setLayoutLabelColors()
+        showSongDetails(songDetailsViewModel: songDetailsViewModel)
     }
     
-    func showSongDetails(song: SongDetailsViewModel?) {
+    func showSongDetails(songDetailsViewModel: SongDetailsViewModel) {
         
-        albumImageView.image = song?.albumImage
-        artistTextView.text = song?.artist
-        titleTextView.text = song?.title
-        albumTextView.text = song?.album
-        yearTextView.text = song?.releaseYear
-        producerTextView.text = song?.producer
-        recordCompanyTextView.text = song?.recordLabel
-        lyricsTextView.text = song?.lyrics
+        albumImageView.image = songDetailsViewModel.albumImage
+        artistTextView.text = songDetailsViewModel.artist
+        titleTextView.text = songDetailsViewModel.title
+        albumTextView.text = songDetailsViewModel.album
+        yearTextView.text = songDetailsViewModel.releaseYear
+        producerTextView.text = songDetailsViewModel.producer
+        recordCompanyTextView.text = songDetailsViewModel.recordLabel
+        lyricsTextView.text = songDetailsViewModel.lyrics
     }
     
     func setLayoutLabelColors() {

@@ -16,6 +16,7 @@
 		ED8604F52085EC920095AFDB /* sounds_coolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8604F42085EC920095AFDB /* sounds_coolTests.swift */; };
 		EDD25BE4207DFAD200EA1E42 /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD25BE3207DFAD200EA1E42 /* SongDetailsViewController.swift */; };
 		EDD25BE8207DFE9200EA1E42 /* CustomSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD25BE7207DFE9200EA1E42 /* CustomSongTableViewCell.swift */; };
+		EDDD7C48208DEE21000E259E /* SongsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD7C47208DEE21000E259E /* SongsRepository.swift */; };
 		EDFAFBEF207F677F00AD1515 /* SongsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFBEE207F677F00AD1515 /* SongsListViewModel.swift */; };
 		EDFAFBF1207F679800AD1515 /* SongDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFBF0207F679800AD1515 /* SongDetailsViewModel.swift */; };
 		EDFAFBF3207F67AF00AD1515 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAFBF2207F67AF00AD1515 /* Song.swift */; };
@@ -45,6 +46,7 @@
 		ED8604F62085EC930095AFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDD25BE3207DFAD200EA1E42 /* SongDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsViewController.swift; sourceTree = "<group>"; };
 		EDD25BE7207DFE9200EA1E42 /* CustomSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSongTableViewCell.swift; sourceTree = "<group>"; };
+		EDDD7C47208DEE21000E259E /* SongsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRepository.swift; sourceTree = "<group>"; };
 		EDFAFBEE207F677F00AD1515 /* SongsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsListViewModel.swift; path = "sounds-cool/View/SongsListViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		EDFAFBF0207F679800AD1515 /* SongDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongDetailsViewModel.swift; path = "sounds-cool/View/SongDetailsViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		EDFAFBF2207F67AF00AD1515 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Song.swift; path = "sounds-cool/View/Song.swift"; sourceTree = SOURCE_ROOT; };
@@ -89,6 +91,7 @@
 		ED1A212F207CF141006EC36E /* sounds-cool */ = {
 			isa = PBXGroup;
 			children = (
+				EDDD7C44208DE797000E259E /* Repository */,
 				ED60269D20875C7000FA07FA /* Extension */,
 				EDD25BE2207DFA5C00EA1E42 /* Model */,
 				EDD25BE1207DFA5200EA1E42 /* ViewModel */,
@@ -160,6 +163,14 @@
 				ED1A2139207CF141006EC36E /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EDDD7C44208DE797000E259E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EDDD7C47208DEE21000E259E /* SongsRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 				ED60269F20875C9D00FA07FA /* DetailsLabelExtension.swift in Sources */,
 				EDD25BE8207DFE9200EA1E42 /* CustomSongTableViewCell.swift in Sources */,
 				EDFAFBF1207F679800AD1515 /* SongDetailsViewModel.swift in Sources */,
+				EDDD7C48208DEE21000E259E /* SongsRepository.swift in Sources */,
 				EDD25BE4207DFAD200EA1E42 /* SongDetailsViewController.swift in Sources */,
 				EDFAFBF3207F67AF00AD1515 /* Song.swift in Sources */,
 				ED1A2131207CF141006EC36E /* AppDelegate.swift in Sources */,
