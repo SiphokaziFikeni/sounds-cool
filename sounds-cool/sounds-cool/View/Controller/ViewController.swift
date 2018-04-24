@@ -1,9 +1,10 @@
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDelegate {
   
     @IBOutlet weak var songsTableView: UITableView!
-    let songDetailsViewModel: [SongDetailsViewModel] = (UIApplication.shared.delegate as! AppDelegate).songs
+    let TABLE_CELL_IDENTIFIER = "SongTableCell"
+    var songsListViewModel : SongListViewModel = SongListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,23 +16,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     private func setTableViewDataSourceAndDelegate() {
         songsTableView.dataSource = self
         songsTableView.delegate = self
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return songDetailsViewModel.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SongTableCell", for: indexPath) as! CustomSongTableCiewCell
-        
-        let songViewModel = songDetailsViewModel[indexPath.row]
-        cell.songItemArtistLabel.text = songViewModel.artist
-        cell.songItemTitleLabel.text = songViewModel.title
-        let albumText = songViewModel.album
-        cell.songItemAlbumLabel.text = albumText! + " (" + songViewModel.releaseYear + ")"
-        cell.imageView?.image = songViewModel.albumImage
-        
-        return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -46,13 +30,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         guard let indexPath = songsTableView.indexPath(for: selectedSongCell) else {
-            fatalError("The selected cell is not being diplayed by the table")
+            fatalError("The selected cell is not being displayed by the table")
         }
         
-        let selectedSong = songDetailsViewModel[indexPath.row]
-        
-        songDetailsViewController.song = selectedSong
+        songDetailsViewController.songId = songsListViewModel.songsList[indexPath.row].id
     }
 
 }
+
+//Mark: tableView delegate methods
+extension ViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return songsListViewModel.getNumberOfSongs()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
+        let cell = tableView.dequeueReusableCell(withIdentifier: TABLE_CELL_IDENTIFIER, for: indexPath) as! CustomSongTableCiewCell
+        cell.setTableCellData(songListViewModel: songsListViewModel, indexPath: indexPath.row)
+        
+        return cell
+    }
+}
+
+
+
 
