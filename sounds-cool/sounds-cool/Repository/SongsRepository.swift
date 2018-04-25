@@ -56,6 +56,8 @@ struct SongsRepositoryImpl: SongsRepository {
         songsList.append(Song(id: "09", title: "Man's Life", artist: "Frank Zappa", releaseYear: "1975", album: "Weasels reaped my flesh", recordLabel: "Electric Razor", producer: "Neon Park", lyrics: dummyLyrics, albumImage: UIImage(named: "zappa"))!)
         songsList.append(Song(id: "10", title: "Northern Ireland", artist: "Led Zeppelin", releaseYear: "1973", album: "Houses of the holy", recordLabel: "ten-day", producer: "Arthur C Clarke", lyrics: dummyLyrics, albumImage: UIImage(named: "zeppelin"))!)
         
+       let manager = NetworkManager()
+        manager.getTopSongs()
     }
     
     func getAllSongs() -> [Song] {

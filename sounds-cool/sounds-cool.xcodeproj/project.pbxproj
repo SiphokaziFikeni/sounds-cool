@@ -14,6 +14,16 @@
 		ED1A213B207CF141006EC36E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1A2139207CF141006EC36E /* LaunchScreen.storyboard */; };
 		ED60269F20875C9D00FA07FA /* DetailsLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60269E20875C9D00FA07FA /* DetailsLabelExtension.swift */; };
 		ED8118F820906B2600F1D3F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8118F720906B2600F1D3F8 /* NetworkManager.swift */; };
+		ED8119392090D5CF00F1D3F8 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81192E2090960D00F1D3F8 /* Body.swift */; };
+		ED81193A2090D5CF00F1D3F8 /* SecondaryGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8119342090962100F1D3F8 /* SecondaryGenres.swift */; };
+		ED81193B2090D5CF00F1D3F8 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8119372090962600F1D3F8 /* Track.swift */; };
+		ED81193C2090D5CF00F1D3F8 /* PrimaryGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8119312090961E00F1D3F8 /* PrimaryGenres.swift */; };
+		ED81193D2090D5CF00F1D3F8 /* MusicGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8119352090962400F1D3F8 /* MusicGenre.swift */; };
+		ED81193E2090D5CF00F1D3F8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8119332090961E00F1D3F8 /* Message.swift */; };
+		ED81193F2090D5CF00F1D3F8 /* TrackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8119362090962500F1D3F8 /* TrackList.swift */; };
+		ED8119402090D5CF00F1D3F8 /* MusicGenreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8119302090961D00F1D3F8 /* MusicGenreList.swift */; };
+		ED8119412090D5CF00F1D3F8 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8119322090961E00F1D3F8 /* Header.swift */; };
+		ED8119422090D5CF00F1D3F8 /* BaseJsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81192F2090961D00F1D3F8 /* BaseJsonResponse.swift */; };
 		ED8604F52085EC920095AFDB /* sounds_coolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8604F42085EC920095AFDB /* sounds_coolTests.swift */; };
 		EDD25BE4207DFAD200EA1E42 /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD25BE3207DFAD200EA1E42 /* SongDetailsViewController.swift */; };
 		EDD25BE8207DFE9200EA1E42 /* CustomSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD25BE7207DFE9200EA1E42 /* CustomSongTableViewCell.swift */; };
@@ -127,8 +137,8 @@
 		ED7CEE3F208F4E8100BBE3C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ED8119382090964300F1D3F8 /* SongDetailsModel */,
-				ED81192D209095EC00F1D3F8 /* SongsModel */,
+				ED8119452090D6A500F1D3F8 /* SongDetailsModel */,
+				ED8119442090D62B00F1D3F8 /* SongsModel */,
 				EDFAFBF2207F67AF00AD1515 /* Song.swift */,
 			);
 			path = Model;
@@ -151,24 +161,24 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		ED81192D209095EC00F1D3F8 /* SongsModel */ = {
+		ED8119442090D62B00F1D3F8 /* SongsModel */ = {
 			isa = PBXGroup;
 			children = (
-				ED81192E2090960D00F1D3F8 /* Body.swift */,
-				ED8119322090961E00F1D3F8 /* Header.swift */,
 				ED81192F2090961D00F1D3F8 /* BaseJsonResponse.swift */,
 				ED8119332090961E00F1D3F8 /* Message.swift */,
+				ED8119322090961E00F1D3F8 /* Header.swift */,
+				ED81192E2090960D00F1D3F8 /* Body.swift */,
+				ED8119362090962500F1D3F8 /* TrackList.swift */,
+				ED8119372090962600F1D3F8 /* Track.swift */,
 				ED8119302090961D00F1D3F8 /* MusicGenreList.swift */,
 				ED8119352090962400F1D3F8 /* MusicGenre.swift */,
 				ED8119312090961E00F1D3F8 /* PrimaryGenres.swift */,
 				ED8119342090962100F1D3F8 /* SecondaryGenres.swift */,
-				ED8119362090962500F1D3F8 /* TrackList.swift */,
-				ED8119372090962600F1D3F8 /* Track.swift */,
 			);
 			path = SongsModel;
 			sourceTree = "<group>";
 		};
-		ED8119382090964300F1D3F8 /* SongDetailsModel */ = {
+		ED8119452090D6A500F1D3F8 /* SongDetailsModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -323,14 +333,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8119412090D5CF00F1D3F8 /* Header.swift in Sources */,
+				ED8119422090D5CF00F1D3F8 /* BaseJsonResponse.swift in Sources */,
+				ED81193A2090D5CF00F1D3F8 /* SecondaryGenres.swift in Sources */,
+				ED8119402090D5CF00F1D3F8 /* MusicGenreList.swift in Sources */,
+				ED8119392090D5CF00F1D3F8 /* Body.swift in Sources */,
 				ED1A2133207CF141006EC36E /* ViewController.swift in Sources */,
+				ED81193D2090D5CF00F1D3F8 /* MusicGenre.swift in Sources */,
 				ED60269F20875C9D00FA07FA /* DetailsLabelExtension.swift in Sources */,
+				ED81193C2090D5CF00F1D3F8 /* PrimaryGenres.swift in Sources */,
 				ED8118F820906B2600F1D3F8 /* NetworkManager.swift in Sources */,
 				EDD25BE8207DFE9200EA1E42 /* CustomSongTableViewCell.swift in Sources */,
 				EDFAFBF1207F679800AD1515 /* SongDetailsViewModel.swift in Sources */,
 				EDDD7C48208DEE21000E259E /* SongsRepository.swift in Sources */,
 				EDD25BE4207DFAD200EA1E42 /* SongDetailsViewController.swift in Sources */,
 				EDFAFBF3207F67AF00AD1515 /* Song.swift in Sources */,
+				ED81193F2090D5CF00F1D3F8 /* TrackList.swift in Sources */,
+				ED81193B2090D5CF00F1D3F8 /* Track.swift in Sources */,
+				ED81193E2090D5CF00F1D3F8 /* Message.swift in Sources */,
 				ED1A2131207CF141006EC36E /* AppDelegate.swift in Sources */,
 				EDFAFBEF207F677F00AD1515 /* SongsListViewModel.swift in Sources */,
 			);
