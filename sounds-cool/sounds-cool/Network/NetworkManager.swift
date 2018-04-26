@@ -29,18 +29,18 @@ class NetworkManager {
                     print(self.errorMessage)
                 
                 } else if let data = data,
-                let response = response as? HTTPURLResponse,
-                    response.statusCode == 200 {
+                        let response = response as? HTTPURLResponse,
+                            response.statusCode == 200 {
                     
-//                    let songsResponse = try? self.jsonDecoder.decode(BaseJsonResponse.self, from: data)
-                    
-                    if let resu = String.init(data: data, encoding: String.Encoding.utf8) {
-                        
-                        print(resu)
-//                        print(songsResponse?.message?.body?.trackList)
-                    } else {
-                        print("no songs fuck")
-                    }
+        //                    let songsResponse = try? self.jsonDecoder.decode(BaseJsonResponse.self, from: data)
+                            
+                            if let resu = String.init(data: data, encoding: String.Encoding.utf8) {
+                                
+                                print(resu)
+        //                        print(songsResponse?.message?.body?.trackList)
+                            } else {
+                                print("no songs fuck")
+                            }
                 }
             }
             
