@@ -8,8 +8,6 @@ class ViewController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.title = "Songs Dope"
         setTableViewDataSourceAndDelegate()
     }
     
